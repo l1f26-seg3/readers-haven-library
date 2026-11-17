@@ -1,0 +1,20 @@
+/* ===== SHARED BASE (Team Lead) ===== */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #222; background: #faf7f2; }
+header { background: #5b3a29; color: #fff; padding: 1rem 2rem; }
+nav a { color: #fff; margin-right: 1rem; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+footer { text-align: center; padding: 1rem; background: #eee; }
+.card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+@media (max-width: 600px) { header { padding: 1rem; } nav a { display: block; margin: .4rem 0; } }
+
+/* ===== HOME PAGE (Team Lead) ===== */
+
+/* ===== COLLECTIONS PAGE (Member 1) ===== */
+
+/* ===== MEMBERSHIP PAGE (Member 2) ===== */
+
+/* ===== SERVICES PAGE (Member 3) ===== */
+
+/* ===== CONTACT PAGE (Member 4) ===== */

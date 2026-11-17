@@ -1,0 +1,15 @@
+{
+  "name": "readers-haven-library",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build \"src/*.html\" --dist-dir dist --public-url ./ --no-cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
