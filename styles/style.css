@@ -12,6 +12,43 @@ footer { text-align: center; padding: 1rem; background: #eee; }
 /* ===== HOME PAGE (Team Lead) ===== */
 
 /* ===== COLLECTIONS PAGE (Member 1) ===== */
+.collections-intro {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.collection-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.collection-card h3 {
+  margin-top: 0;
+}
+
+.collection-card ul {
+  padding-left: 1.2rem;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 600px) {
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ===== MEMBERSHIP PAGE (Member 2) ===== */
 
