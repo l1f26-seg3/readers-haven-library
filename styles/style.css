@@ -9,293 +9,6 @@ footer { text-align: center; padding: 1rem; background: #eee; }
 .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
 @media (max-width: 600px) { header { padding: 1rem; } nav a { display: block; margin: .4rem 0; } }
 
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {  
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fb;
-    color: #263238;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1150px;
-    margin: auto;
-}
-
-/* Header */
-.header {
-    background-color: #142b3b;
-    padding: 20px 0;
-    color: white;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav h1 {
-    font-size: 25px;
-    color: #ffffff;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 15px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f4bd61;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #183e52, #287b79);
-    color: white;
-    text-align: center;
-    padding: 75px 20px;
-}
-
-.subtitle {
-    color: #f4bd61;
-    letter-spacing: 3px;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    max-width: 650px;
-    margin: auto;
-    font-size: 16px;
-    color: #e2eeee;
-}
-
-/* Membership Section */
-.membership-section {
-    padding-top: 65px;
-    padding-bottom: 70px;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-heading h2 {
-    font-size: 32px;
-    color: #142b3b;
-    margin-bottom: 10px;
-}
-
-.section-heading p {
-    color: #68777d;
-}
-
-/* Membership Cards */
-.plans {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    align-items: stretch;
-}
-
-.plan-card {
-    background-color: white;
-    padding: 35px 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-    border: 1px solid #e6ebef;
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.plan-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-}
-
-.popular {
-    border: 2px solid #287b79;
-}
-
-.popular-label {
-    position: absolute;
-    top: -13px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #287b79;
-    color: white;
-    padding: 5px 18px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.plan-icon {
-    font-size: 38px;
-    margin-bottom: 12px;
-}
-
-.plan-card h3 {
-    color: #142b3b;
-    font-size: 23px;
-    margin-bottom: 8px;
-}
-
-.description {
-    color: #78858c;
-    font-size: 14px;
-    min-height: 45px;
-}
-
-.price {
-    font-size: 30px;
-    font-weight: bold;
-    color: #287b79;
-    margin: 22px 0;
-}
-
-.price span {
-    font-size: 14px;
-}
-
-.price small {
-    font-size: 13px;
-    color: #78858c;
-    font-weight: normal;
-}
-
-.plan-card ul {
-    list-style: none;
-    text-align: left;
-    margin: 25px 0;
-}
-
-.plan-card ul li {
-    padding: 11px 0;
-    border-bottom: 1px solid #edf0f2;
-    font-size: 14px;
-}
-
-.plan-card ul li::before {
-    content: "✓";
-    color: #287b79;
-    font-weight: bold;
-    margin-right: 10px;
-}
- 
-.plan-button {
-    display: block;
-    background-color: #142b3b;
-    color: white;
-    text-decoration: none;
-    padding: 13px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.plan-button:hover {
-    background-color: #287b79;
-}
-
-/* Membership Rules */
-.rules {
-    background-color: #eaf1f2;
-    padding: 55px 0;
-    text-align: center;
-}
-
-.rules h2 {
-    font-size: 30px;
-    margin-bottom: 35px;
-    color: #142b3b;
-}
-
-.rules-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.rules-content div {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-.rules-content h3 {
-    color: #287b79;
-    margin-bottom: 12px;
-}
-
-.rules-content p {
-    font-size: 14px;
-    color: #68777d;
-}
-
-/* Footer */
-footer {
-    background-color: #142b3b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 850px) {
-    .plans {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .rules-content {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav a {
-        margin: 0 7px;
-        font-size: 13px;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .plans {
-        grid-template-columns: 1fr;
-    }
-
-    .section-heading h2 {
-        font-size: 26px;
-    }
-}
-
 /* ===== HOME PAGE (Team Lead) ===== */
 
 /* ===== COLLECTIONS PAGE (Member 1) ===== */
@@ -329,15 +42,231 @@ footer {
   padding-left: 1.2rem;
 }
 
-/* Responsive: single column on small screens */
 @media (max-width: 600px) {
   .collections-grid {
     grid-template-columns: 1fr;
   }
 }
 
-
 /* ===== MEMBERSHIP PAGE (Member 2) ===== */
+.membership-hero {
+  background: linear-gradient(135deg, #5b3a29, #7d523b);
+  color: #ffffff;
+  text-align: center;
+  padding: 2.75rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.membership-subtitle {
+  color: #f4bd61;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 0.75rem;
+}
+
+.membership-hero h2 {
+  font-size: 30px;
+  margin: 0 0 0.75rem;
+}
+
+.membership-hero p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #f5ece6;
+}
+
+.membership-section {
+  margin-bottom: 2.5rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  font-size: 26px;
+  color: #5b3a29;
+  margin: 0 0 0.4rem;
+}
+
+.section-heading p {
+  color: #666;
+  margin: 0;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.plan-card {
+  background-color: #ffffff;
+  padding: 2rem 1.25rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.popular {
+  border: 2px solid #5b3a29;
+}
+
+.popular-label {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5b3a29;
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.plan-icon {
+  font-size: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card h3 {
+  color: #5b3a29;
+  font-size: 21px;
+  margin: 0 0 0.4rem;
+}
+
+.description {
+  color: #666;
+  font-size: 14px;
+  min-height: 40px;
+  margin: 0;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5b3a29;
+  margin: 1rem 0;
+}
+
+.price span {
+  font-size: 14px;
+}
+
+.price small {
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 1rem 0 1.5rem;
+  flex-grow: 1;
+}
+
+.plan-card ul li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.plan-card ul li::before {
+  content: "✓";
+  color: #5b3a29;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.plan-button {
+  display: block;
+  background-color: #5b3a29;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.25s;
+}
+
+.plan-button:hover {
+  background-color: #3f271b;
+}
+
+.rules {
+  background-color: #f2ebe1;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2d6c5;
+  text-align: center;
+}
+
+.rules h2 {
+  font-size: 24px;
+  margin: 0 0 1.5rem;
+  color: #5b3a29;
+}
+
+.rules-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.rules-content div {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.rules-content h3 {
+  color: #5b3a29;
+  margin: 0 0 0.5rem;
+  font-size: 17px;
+}
+
+.rules-content p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rules-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .membership-hero h2 {
+    font-size: 24px;
+  }
+  .plans {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ===== SERVICES PAGE (Member 3) ===== */
 
