@@ -1,0 +1,11 @@
+Complete Membership Page Implementation
+
+- Added Student membership plan.
+- Added Adult membership plan.
+- Added Family membership plan.
+- Added annual fees in PKR.
+- Added borrowing limits and loan periods.
+- Added late-return rules.
+- Added responsive CSS styling.
+
+Closes #2
